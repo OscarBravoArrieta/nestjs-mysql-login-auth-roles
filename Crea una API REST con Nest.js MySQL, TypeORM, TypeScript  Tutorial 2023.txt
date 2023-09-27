@@ -1,0 +1,14 @@
+https://www.youtube.com/watch?v=RWUmlsdZ1e4
+
+
+Levantar el servidor docker: docker compose up -d
+
+Para generar un recurso: nest generate res csts --no-spec //Nota --no-spec es para no generar los archjivos test
+
+
+npm install class-validator --save
+npm i class-transformer --save
+npm i @nestjs/typeorm typeorm mysql2 --save
+
+
+01:54
