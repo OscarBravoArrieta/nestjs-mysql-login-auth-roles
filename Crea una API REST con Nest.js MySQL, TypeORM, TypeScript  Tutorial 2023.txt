@@ -1,4 +1,4 @@
-https://www.youtube.com/watch?v=RWUmlsdZ1e4
+1. https://www.youtube.com/watch?v=RWUmlsdZ1e4
 
 
 Levantar el servidor docker: docker compose up -d
@@ -10,5 +10,12 @@ npm install class-validator --save
 npm i class-transformer --save
 npm i @nestjs/typeorm typeorm mysql2 --save
 
+npm install bcryptjs
+npm install --save @nest/jwt
 
-01:54
+
+2. https://www.youtube.com/watch?v=Z6G7mCAeXoE
+
+Para generar el modulo de usuarios: nest generate res users
+
+10:10
