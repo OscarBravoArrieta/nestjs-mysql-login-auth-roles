@@ -40,13 +40,13 @@
                  email: user.email,
                  idUser: user.id,
                  rol: 'write here the user roll'
-             };
+             }
 
          const token = await this.jwtService.signAsync(payload)
          return {
              token,
              email,
-         };
+         }
 
      }
  }
