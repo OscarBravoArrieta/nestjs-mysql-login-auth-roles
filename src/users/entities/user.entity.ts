@@ -14,7 +14,7 @@
      password: string
 
      @Column({ default: 'user'})
-     rol: string
+     role: string
 
      @DeleteDateColumn()
      deleteAt: Date

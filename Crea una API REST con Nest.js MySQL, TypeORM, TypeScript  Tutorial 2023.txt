@@ -13,9 +13,14 @@ npm i @nestjs/typeorm typeorm mysql2 --save
 npm install bcryptjs
 npm install --save @nest/jwt
 
-
+---------------------------------------------------------------------------------------------------
 2. https://www.youtube.com/watch?v=Z6G7mCAeXoE
 
 Para generar el modulo de usuarios: nest generate res users
 
 01:30
+---------------------------------------------------------------------------------------------------
+3. API REST con Nest.js: Autorización (Roles) - Primera parte
+https://www.youtube.com/watch?v=TZ4P0DEfuys
+
+47:00

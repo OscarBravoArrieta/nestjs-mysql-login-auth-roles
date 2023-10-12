@@ -18,11 +18,15 @@
          if (user) {
              throw new BadRequestException('Usuario already exist')
          }
-         return await this.userService.create({
+         await this.userService.create({
              name, 
              email, 
              password: await bcryptjs.hash(password, 10)
          })
+         return {
+             name,
+             email
+         }
      }
      async login({email, password}: LoginDto){
          const user = await this.userService.finOneByEmail(email)
@@ -39,7 +43,7 @@
              { 
                  email: user.email,
                  idUser: user.id,
-                 rol: 'write here the user roll'
+                 role: user.role
              }
 
          const token = await this.jwtService.signAsync(payload)
@@ -47,6 +51,13 @@
              token,
              email,
          }
-
+     }
+     async profile({email, role}: {email: string, role: string}) {
+        //  if (role !== 'admin') {
+        //      throw new UnauthorizedException(
+        //          'You are not autjorized to acces this resource'
+        //      )
+        //  }
+         return await this.userService.finOneByEmail(email)
      }
  }
